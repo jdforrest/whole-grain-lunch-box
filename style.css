@@ -1,0 +1,540 @@
+/*
+Theme Name: Whole Wheat
+Theme URI:  http://jdforrest.net
+Description:  A test theme for a baking website
+Author: John Forrest
+Author URI:  http://jdforrest.net
+Version:  1.0
+
+Tags: 
+
+License:
+
+License URI:
+
+General comments (optional).
+ */
+
+/* RESETS */
+body, body * {
+	margin: 0;
+	padding: 0;
+}
+
+/* older versions of IE put borders around images in they are links, this takes that out */
+a img {
+	border: 0;
+}
+
+
+/*  LAYOUT */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;	
+	line-height: 1.4; /* always a %, bare minimum would be 130%(1.3), spacing between lines of text, puts 1/2 above and 1/2 below top and bottom of text */
+}
+
+#wrapper{	
+	width: 800px;
+	margin: 20px auto;
+	padding-bottom: 50px; /* lifts up the footer a bit */
+	background-color: white;
+	background-image: url("wheat-background-new.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 -8px;
+}
+
+header{
+	height: 100px;
+	padding-top: 30px;	
+}
+
+header h1{	
+	font-family: Georgia, Times, "Times New Roman", serif;	
+	padding-left: 30px;
+	font-variant:small-caps;
+	font-size: 48px;
+}
+
+header a{
+	text-decoration: none;
+	color: #496BA9;
+	float: left;
+	margin-right: 40px;
+}
+
+h1,
+h2,
+h3{
+	font-weight: normal;
+}
+
+#middle{
+	clear: both;
+	overflow: hidden;
+}
+
+#content{
+	width: 550px;		
+	padding-top: 60px;
+	float: left;	
+}
+
+#page-div{
+	min-height: 300px;
+	border-bottom: 3px solid #496BA9;
+	margin-bottom: 20px;	
+	padding-bottom: 20px;
+}
+
+.blue-line{
+	border-bottom: 3px solid #496BA9;
+}
+
+.blue-line-margins{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.blue-line-big-margins{
+	margin-bottom: 20px;
+	padding-top: 40px;	
+}
+
+.slider-wrapper{
+	width: 550px;
+	min-height: 575px;
+}
+
+/* POSTS STYLES */
+
+.post{
+	width: 98%;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #496BA9;	
+}
+
+.post p{
+	padding-top: 10px;
+}
+
+.post h2{
+	font-size: 22px;	
+}
+
+.post a,
+.more-link{
+	color: #496BA9;	
+	text-decoration: none;	
+}
+
+.post h3{
+	font-size: 16px;
+}
+
+.post li,
+#content li{
+	margin-left: 40px;
+}
+
+.post ul,
+.post ol,
+#content ul{
+	margin-bottom: 15px;
+}
+
+.ingredients{
+	width: 180px;
+	padding-right: 20px;
+	border-right: 1px solid #496BA9;	
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.preparation{
+	width: 300px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.attachment-post-thumbnail,
+#content img{
+	margin: 0 0 10px 10px;
+	float: right;
+	-moz-box-shadow: 3px 3px 3px #777777;
+	-webkit-box-shadow: 3px 3px 3px #777777;
+	box-shadow: 3px 3px 3px #777777;
+}
+
+#content .printfriendly img{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+p, ol, ul, dl{
+	margin-bottom: 6px;
+}
+
+li ul li,
+ol li,
+ul li{
+	margin-bottom: 4px;
+}
+
+/* IN DEV for yield display
+#yield{
+	width: 70px;
+	text-align: center;
+	border-top: 2px solid #496BA9;
+	border-bottom: 2px solid #496BA9;
+	font-size: 10px;
+	text-transform: uppercase; 
+	font-weight: bold;
+	float: left;
+	line-height: 1.0;
+	padding-top: 5px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+}
+
+#yield-number{	
+	font-family: Georgia, Times, "Times New Roman", serif;
+	text-align: center;
+	font-size: 28px;
+	color: #496BA9;
+}
+
+END DEV */
+
+/* END POSTS STYLES */
+
+/* SINGLE.PHP STYLES */
+#comments-div{
+	margin-top: 40px;
+	margin-bottom: 40px;	
+}
+
+#comments-div h2{
+	color: #496BA9;	
+}
+
+#comments-num{
+	font-size: 16px;
+}
+
+#commentform p{
+	margin: 0;
+	padding: 0;
+}
+
+#comments{
+	display: inline;	
+}
+
+#comment{
+	width: 540px;
+	border: 1px solid #496BA9;
+	-moz-box-shadow: 3px 3px 3px #777777;
+	-webkit-box-shadow: 3px 3px 3px #777777;
+	box-shadow: 3px 3px 3px #777777;
+}
+
+#comment-submit{
+	float: right;
+}
+
+#respond h3{
+	color: #496BA9;	
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#archive-title,
+#search-title,
+.breadcrumb{
+	border-bottom: 3px solid #496BA9;
+	margin-bottom: 50px;
+}
+
+.breadcrumb{
+	font-size: 12px;
+	border-bottom: 3px solid #496BA9;
+	margin-bottom: 50px;
+}
+
+#page-title{
+	font-size: 24px;
+	color: #496BA9;
+}
+
+#blank-search{
+	width: 275px;
+	margin-bottom: 100px;
+}
+
+#blank-search-bottom{
+	margin-bottom: 20px;
+}
+
+#content .recipe-category img{
+	padding: 0;
+	margin: 0 15px 20px 0;
+	float: left;
+}
+
+/* END SINGLE.PHP STYLES */
+
+/* SIDEBAR STYLES */
+#right_aside{
+	width: 200px;
+	margin-top: 20px;
+	float: right;
+	padding-right: 5px;
+}
+
+#right_aside .screen-reader-text{
+	display: none;
+}
+
+#s{
+	width: 135px;
+	background-color: rgb(250, 250, 250); /* fall back color in case the opacity doesn't work below */
+	background-color: rgba(250, 250, 250, 0.6); /* overrides the above color if browser accepts opacity */
+	border: 1px solid #496BA9;		
+	-moz-box-shadow: 3px 3px 3px #777777;
+	-webkit-box-shadow: 3px 3px 3px #777777;
+	box-shadow: 3px 3px 3px #777777;	
+}
+
+#searchsubmit{
+	float: right;
+}
+
+.widget{
+	margin-top: 20px;
+}
+
+.widget li{
+	margin-left: 25px;
+}
+
+.textwidget{
+	font-size: 12px;
+}
+
+.prepend{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sml_namelabel,
+.sml_emaillabel{
+	margin-right: 5px;
+}
+
+.sml_nameinput,
+.sml_emailinput{
+	float:right;
+}
+
+.sml_submit{
+	margin-top: 10px;
+	float:right;
+}
+
+/* END SIDEBAR STYLES */
+
+/* FOOTER DIV */
+#bottom{
+	font-size: 10px;
+}
+
+.indent{
+	padding-left: 5px;
+}
+
+#bottom a,
+#to-top a,
+#recent-posts h3 a,
+.widget a,
+#content a{
+	color: #496BA9;
+	text-decoration: none;
+}
+
+#bottom a:hover,
+#bottom a:focus,
+#to-top a:hover,
+#to-top a:focus,
+#recent-posts h3 a:hover,
+#recent-posts h3 a:focus,
+#more-link a:hover,
+#more-link a:focus,
+.widget a:hover,
+.widget a:focus,
+.post a:hover,
+.post a:focus,
+#content a:hover,
+#content a:focus{
+	text-decoration: underline;
+}
+/* NAV STYLES */
+#main_nav{
+	background-color: #000033;
+	overflow: hidden;
+}
+
+.menu li{
+	width: 100px;
+	padding: 10px 0 10px 30px;
+	float: left;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu li a:hover{
+	color: #D1D9EB;
+}
+
+#footer_nav{
+	width: 550px;
+	border-top: 3px solid #496BA9;
+	border-bottom: 3px solid #496BA9;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+#footer_nav .menu a{
+	color: #496BA9;
+}
+
+#footer_nav .menu li{
+	float: left;
+}
+
+/* END NAV STYLES */
+
+/* RECENT POSTS DIV STYLES */ /* RECENT POSTS IN DEV, CURRENTLY USING WIDGET */
+#recent-posts{
+	clear: both;
+	margin-right: 10px;
+}
+
+#recent-posts img{
+	-moz-box-shadow: 3px 3px 3px #777777;
+	-webkit-box-shadow: 3px 3px 3px #777777;
+	box-shadow: 3px 3px 3px #777777;
+}
+
+#recent-posts h2{
+	margin-bottom: 10px;
+	color: #496BA9;
+}
+
+#recent-posts h3{
+	font-size: 12px;
+}
+
+#recent-posts section{
+	width: 170px;
+	float: left;
+}
+
+.section-gutter{
+	margin-right: 15px;
+}
+
+#to-top{
+	clear: both;
+	padding-top: 0px;
+	font-size: 10px;
+}
+
+		/*RECENT POSTS WIDGET STYLES */
+.srp-widget-container{
+	width: 600px;
+}
+		
+.srp-widget-singlepost{
+	float: left;
+	width: 170px;
+}
+
+.srp-widget-singlepost .srp-thumbnail-box{		
+	display: block;
+}
+
+.srp-post-title{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.srp-post-title-link{
+	text-decoration: none;
+}
+
+#wdg_specialrecentpostsfree-2-srp-singlepost-1,
+#wdg_specialrecentpostsfree-2-srp-singlepost-2,
+#wdg_specialrecentpostsfree-2-srp-singlepost-3{
+	float: left;
+	border-bottom: none;
+	clear: none;
+}
+
+#wdg_specialrecentpostsfree-2-srp-singlepost-1,
+#wdg_specialrecentpostsfree-2-srp-singlepost-2{
+	padding-right: 20px;
+}
+
+/* END RECENT POSTS DIV STYLES */
+
+/* this is for page identification */
+.page-id{
+	color: #496BA9;
+	font-size: 14px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	border-bottom: 3px solid #496BA9;
+	width: 550px;
+	float: left;
+	margin-bottom: 20px;		
+}
+
+/* GALLERY STYLES (for jquery slideshow)*/
+#gallery{
+	position: relative;
+	background-color: rgb(255, 255, 255); /* fall back color in case the opacity doesn't work below */
+	background-color: rgba(255, 255, 255, 0.6); /* overrides the above color if browser accepts opacity */
+	-moz-box-shadow: 5px 5px 5px #777777;
+	-webkit-box-shadow: 5px 5px 5px #777777;
+	box-shadow: 5px 5px 5px #777777;
+	/* border: 1px solid #496BA9; */
+	border: 1px solid black; /* DEV ONLY! */ 
+	width: 550px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+#gallery img{
+	padding: 25px;
+}
+
+/* END GALLERY STYLES */
+
+
+.clear{
+	clear: both;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
